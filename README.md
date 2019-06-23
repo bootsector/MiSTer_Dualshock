@@ -1,6 +1,8 @@
 # MiSTer_Dualshock
 FPGA native serial Dualshock interface for MiSTer
 
+![alt text](https://i.imgur.com/AsgAaWl.png)
+
 This is a very simple Dualshock serial interface for MiSTer FPGA that allows 
 you to play on MiSTer with your Sony Dualshock 1/2 controllers and other
 compatible devices and adapters.
