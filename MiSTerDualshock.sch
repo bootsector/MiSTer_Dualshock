@@ -3968,6 +3968,10 @@ type 0309, grid 2.5 mm</description>
 <part name="J1" library="con-jack" deviceset="JACK-PLUG" device="1"/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="R1" library="resistor" deviceset="R-US_" device="0207/10" value="10K"/>
+<part name="R2" library="resistor" deviceset="R-US_" device="0207/10" value="10K"/>
+<part name="R3" library="resistor" deviceset="R-US_" device="0207/10" value="10K"/>
+<part name="R4" library="resistor" deviceset="R-US_" device="0207/10" value="10K"/>
+<part name="R5" library="resistor" deviceset="R-US_" device="0207/10" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -3996,6 +4000,10 @@ type 0309, grid 2.5 mm</description>
 <instance part="J1" gate="G$1" x="144.78" y="50.8"/>
 <instance part="JP1" gate="A" x="91.44" y="58.42"/>
 <instance part="R1" gate="G$1" x="187.96" y="53.34" rot="R90"/>
+<instance part="R2" gate="G$1" x="198.12" y="53.34" rot="R90"/>
+<instance part="R3" gate="G$1" x="167.64" y="53.34" rot="R90"/>
+<instance part="R4" gate="G$1" x="177.8" y="53.34" rot="R90"/>
+<instance part="R5" gate="G$1" x="208.28" y="53.34" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -4014,6 +4022,11 @@ type 0309, grid 2.5 mm</description>
 <wire x1="175.26" y1="10.16" x2="167.64" y2="10.16" width="0.1524" layer="91"/>
 <label x="167.64" y="10.16" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="187.96" y1="48.26" x2="187.96" y2="43.18" width="0.1524" layer="91"/>
+<label x="187.96" y="43.18" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="3V3" class="0">
 <segment>
@@ -4030,6 +4043,26 @@ type 0309, grid 2.5 mm</description>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="187.96" y1="58.42" x2="187.96" y2="63.5" width="0.1524" layer="91"/>
 <label x="187.96" y="60.96" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="198.12" y1="58.42" x2="198.12" y2="63.5" width="0.1524" layer="91"/>
+<label x="198.12" y="60.96" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="58.42" x2="167.64" y2="63.5" width="0.1524" layer="91"/>
+<label x="167.64" y="60.96" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="58.42" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
+<label x="177.8" y="60.96" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="208.28" y1="58.42" x2="208.28" y2="63.5" width="0.1524" layer="91"/>
+<label x="208.28" y="60.96" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -4086,6 +4119,11 @@ type 0309, grid 2.5 mm</description>
 <wire x1="175.26" y1="17.78" x2="167.64" y2="17.78" width="0.1524" layer="91"/>
 <label x="167.64" y="17.78" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="177.8" y1="48.26" x2="177.8" y2="43.18" width="0.1524" layer="91"/>
+<label x="177.8" y="43.18" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="DAT" class="0">
 <segment>
@@ -4102,9 +4140,9 @@ type 0309, grid 2.5 mm</description>
 <label x="167.64" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="48.26" x2="187.96" y2="43.18" width="0.1524" layer="91"/>
-<label x="187.96" y="43.18" size="1.778" layer="95" rot="R90"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="48.26" x2="167.64" y2="43.18" width="0.1524" layer="91"/>
+<label x="167.64" y="43.18" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="ATT1" class="0">
@@ -4119,6 +4157,11 @@ type 0309, grid 2.5 mm</description>
 <wire x1="175.26" y1="25.4" x2="167.64" y2="25.4" width="0.1524" layer="91"/>
 <label x="167.64" y="25.4" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="198.12" y1="48.26" x2="198.12" y2="43.18" width="0.1524" layer="91"/>
+<label x="198.12" y="43.18" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="ATT2" class="0">
 <segment>
@@ -4131,6 +4174,11 @@ type 0309, grid 2.5 mm</description>
 <pinref part="K1" gate="G$1" pin="D+"/>
 <wire x1="175.26" y1="22.86" x2="167.64" y2="22.86" width="0.1524" layer="91"/>
 <label x="167.64" y="22.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="208.28" y1="48.26" x2="208.28" y2="43.18" width="0.1524" layer="91"/>
+<label x="208.28" y="43.18" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="VCC" class="0">
